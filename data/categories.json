@@ -1,0 +1,17 @@
+[
+  { "slug": "engineering", "name": "Engineering" },
+  { "slug": "customer-support", "name": "Customer Support" },
+  { "slug": "project-management", "name": "Project Management" },
+  { "slug": "architecture", "name": "Architecture" },
+  { "slug": "gigs", "name": "Gigs & Freelance" },
+  { "slug": "design", "name": "Design" },
+  { "slug": "marketing", "name": "Marketing" },
+  { "slug": "sales", "name": "Sales" },
+  { "slug": "data", "name": "Data & Analytics" },
+  { "slug": "product", "name": "Product" },
+  { "slug": "writing", "name": "Writing & Content" },
+  { "slug": "devops", "name": "DevOps & Infrastructure" },
+  { "slug": "finance", "name": "Finance & Accounting" },
+  { "slug": "hr", "name": "People & HR" },
+  { "slug": "other", "name": "Other" }
+]

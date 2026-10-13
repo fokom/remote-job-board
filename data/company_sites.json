@@ -1,0 +1,16 @@
+[
+  {
+    "name": "GitLab (example)",
+    "url": "https://boards.greenhouse.io/gitlab",
+    "type": "auto",
+    "all_remote": true,
+    "enabled": true
+  },
+  {
+    "name": "Zapier (example)",
+    "url": "https://jobs.ashbyhq.com/zapier",
+    "type": "auto",
+    "all_remote": true,
+    "enabled": true
+  }
+]

@@ -1,0 +1,30 @@
+name: Fetch jobs
+
+# Manual by default (Actions tab -> Fetch jobs -> Run workflow).
+# To run daily, remove the leading "#" on the three schedule lines.
+# If you enable it, run `git pull` before using the admin so your local
+# changes to data/pending.json do not conflict.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "0 5 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run fetcher
+        run: python fetcher/fetch_jobs.py
+      - name: Commit new pending jobs
+        run: |
+          git config user.name "job-fetcher"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/pending.json
+          git diff --cached --quiet || (git commit -m "Fetch new jobs" && git pull --rebase && git push)

@@ -1,0 +1,26 @@
+{
+  "name": "remote-job-board",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Daily remote job board: Python fetcher, local admin review UI, static Next.js site.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "admin": "node admin/server.js",
+    "fetch": "python3 fetcher/fetch_jobs.py",
+    "test:fetcher": "python3 fetcher/test_parsers.py"
+  },
+  "dependencies": {
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

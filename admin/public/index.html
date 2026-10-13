@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Board Admin</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Job Board <span>Admin</span></div>
+    <nav id="tabs" class="tabs"></nav>
+    <div class="actions">
+      <button id="btn-fetch" class="btn primary">Fetch new jobs</button>
+      <button id="btn-deploy" class="btn">Deploy to site</button>
+    </div>
+  </header>
+
+  <div id="notice" class="notice hidden"></div>
+
+  <main id="view"></main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
