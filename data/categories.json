@@ -66,5 +66,13 @@
   {
     "slug": "ops",
     "name": "Ops"
+  },
+  {
+    "slug": "cyber-security",
+    "name": "Cyber Security"
+  },
+  {
+    "slug": "legal",
+    "name": "legal"
   }
 ]
